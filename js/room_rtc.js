@@ -31,6 +31,7 @@ let localScreenTracks;
 let sharingScreen = false;
 
 let joinRoomInit = async () => {
+    console.log('Connected to WebSocket server');
     rtmClient = await AgoraRTM.createInstance(APP_ID);
     await rtmClient.login({ uid, token });
 
@@ -53,6 +54,7 @@ let joinRoomInit = async () => {
 };
 
 let joinStream = async () => {
+    console.log("bhakkk");
     document.getElementById("join-btn").style.display = "none";
     document.getElementsByClassName("stream__actions")[0].style.display =
         "flex";
@@ -126,6 +128,7 @@ let handleUserPublished = async (user, mediaType) => {
 
 let handleUserLeft = async (user) => {
     delete remoteUsers[user.uid];
+    console.log('Disconnected from WebSocket server');
     let item = document.getElementById(`user-container-${user.uid}`);
     if (item) {
         item.remove();
@@ -208,6 +211,7 @@ let toggleScreen = async (e) => {
 
 let leaveStream = async (e) => {
     e.preventDefault();
+    console.log('Disconnected from WebSocket server');
     document.getElementById("join-btn").style.display = "block";
     document.getElementsByClassName("stream__actions")[0].style.display =
         "none";
@@ -239,3 +243,30 @@ document.getElementById("join-btn").addEventListener("click", joinStream);
 document.getElementById("leave-btn").addEventListener("click", leaveStream);
 
 joinRoomInit();
+
+// // Import the socket.io client library if not already imported
+// // const io = require('socket.io-client');
+
+// // Define the WebSocket server URL
+// // const serverUrl =  urlParams ;
+
+// // Create a socket.io client instance and connect to the server
+// const socket = io(serverUrl);
+
+// // Define event handlers for socket.io events
+// socket.on('connect', () => {
+//     console.log('Connected to WebSocket server');
+// });
+
+// socket.on('message', (data) => {
+//     console.log('Received message:', data);
+// });
+
+// socket.on('disconnect', () => {
+//     console.log('Disconnected from WebSocket server');
+// });
+
+// // Example: Sending a message to the server
+// function sendMessage(message) {
+//     socket.emit('message', message);
+// }

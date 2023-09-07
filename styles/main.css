@@ -27,7 +27,7 @@
 }
 
 body {
-  background-color:#272829;
+  background-color:#331D2C;
   color: #fff;
 
   font-size: 14px;
@@ -63,8 +63,8 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #000000;
-  background-color: #1a1a1a;
+  /* border-bottom: 1px solid #000000; */
+  background-color: #331D2C;
   text-decoration: none;
   padding: 16px 5%;
   z-index: 999;
@@ -124,15 +124,17 @@ a {
 
 #create__room__btn {
   display: block;
-  background-color: #FFC436;
+  background-color: #EFE1D1;
   padding: 8px 24px;
   font-size: 14px;
   font-weight: 500;
   border-radius: 5px;
+  color: black;
 }
 
 #create__room__btn:hover {
-  background-color: #845695;
+  background-color: #3F2E3E;
+  color: #EFE1D1;
 }
 
 .nav--list {

@@ -12,7 +12,7 @@
 }
 
 #members__container {
-  background-color: #61677A;
+  background-color: #3F2E3E;
   border-right: 1px solid #797a79;
   overflow-y: auto;
   width: 90%;
@@ -23,7 +23,7 @@
 }
 
 #members__count {
-  background-color: #1d1d1c;
+  /* background-color: #1d1d1c; */
   padding: 7px 15px;
   font-size: 14px;
   font-weight: 600;
@@ -37,7 +37,7 @@
   padding: 0 1rem;
   position: fixed;
   font-size: 18px;
-  background-color: #323143;
+  background-color: #3F2E3E;
   width: 218px;
 }
 
@@ -116,7 +116,7 @@
 .message__body__bot{
   padding: 0 20px;
   max-width: 900px;
-  color: #bdbdbd;
+  color: #ffffff;
 }
 
 
@@ -128,7 +128,7 @@
 
 .message__author__bot {
   margin-right: 10px;
-  color: #a52aca!important;
+  color: #3F2E3E!important;
 
 }
 
@@ -141,19 +141,19 @@
   position: fixed;
   bottom: 0;
   display: block;
-  background-color: #1a1a1a;
+  background-color: #3F2E3E;
   padding: 1em;
 }
 
 #message__form input {
-  color: #fff;
+  color: #433d3d;
   width: 100%;
   border: none;
   border-radius: 5px;
   padding: 18px;
   font-size: 14px;
   box-sizing: border-box;
-  background-color: #3f434a;
+  background-color: #A78295;
 }
 
 #message__form input:focus {
@@ -161,7 +161,8 @@
 }
 
 #message__form input::placeholder {
-  color: #707575;
+  color: #3F2E3E;
+  font-weight: bold;
 }
 
 #stream__container {
@@ -206,7 +207,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid #b366f9;
+  border: 2px solid #EFE1D1;
   border-radius: 50%;
   cursor: pointer;
   overflow:hidden ;
